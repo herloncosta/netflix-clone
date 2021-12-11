@@ -25,6 +25,7 @@ header .logo {
     color: var(--vermelho);
     font-family: "Arial Black", Times;
     font-size: 40px;
+    padding: 10px;
 }
 
 header nav a {
@@ -44,12 +45,14 @@ header nav a:hover {
     background: url('/img/venom-capa.jpg');
 
     background-size: cover;
-    height: 400px;
+    height: 500px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    margin-bottom: 20px;
 }
 
 
@@ -96,4 +99,29 @@ header nav a:hover {
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url("/img/capa-house.jpg");
+    background-size: cover;
+    height: 450px;
+
+    margin-top: 20px;
+}
+
+.rodape {
+    height: 300px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.rodape p {
+    padding: 20px;
+}
+
+.rodape a {
+    color: white;
+    text-decoration: none;
 }
