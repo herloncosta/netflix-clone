@@ -11,7 +11,7 @@
 
 body {
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -26,16 +26,20 @@ header .logo {
     font-family: "Arial Black", Times;
     font-size: 40px;
     padding: 10px;
+    cursor: default;
 }
 
 header nav a {
     text-decoration: none;
     color: #aaa;
     margin-right: 10px;
+    padding-right: 20px;
 }
 
 header nav a:hover {
-    color: #fff;
+    color: var(--vermelho);
+    font-weight: bold;
+    transition: .3s ease;
 }
 
 /* filme principal */
@@ -105,23 +109,55 @@ header nav a:hover {
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url("/img/capa-house.jpg");
     background-size: cover;
     height: 450px;
-
     margin-top: 20px;
 }
 
-.rodape {
-    height: 300px;
+footer {
+    width: 100%;
+}
 
+.rodape-info {
+    padding: 40px;
     display: flex;
-    align-items: flex-end;
+    width: 100%;
+}
+
+.info {
+    width: 50%;
+}
+
+.links {
+    width: 50%;
+    color: var(--vermelho);
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.links a:hover {
+    color: var(--vermelho);
+    font-weight: 700;
+}
+
+.rodape .referencia {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(255,0,0,.50);
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.rodape p {
+.referencia p {
     padding: 20px;
 }
 
-.rodape a {
+.referencia a {
     color: white;
     text-decoration: none;
+    font-weight: 700;
 }
